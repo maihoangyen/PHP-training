@@ -14,7 +14,8 @@
 1. Các chức năng đã hoàn thành
 
    1.1 Chức năng kết nối database
-       `<?php
+   
+       `     <?php
           $servername = "localhost";
           $username = "root";
           $password = "";
