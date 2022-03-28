@@ -1,4 +1,4 @@
-`<?php
+<?php
    $servername = "localhost";
    $username = "root";
    $password = "";
@@ -9,4 +9,4 @@
    }
      echo "kết nối thành công";
    mysqli_close($conn);
-   ?>`
+   ?>
