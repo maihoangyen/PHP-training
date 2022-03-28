@@ -1,2 +1,1 @@
- # <div style="margin: center" id="container">PHP-Training</div> 
-}
+ # <div style="text-align:center"> PHP-Training </div>
