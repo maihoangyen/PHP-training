@@ -3,7 +3,7 @@
  ## Ngày báo cáo: Ngày 18/3/2022
  ### MỤC LỤC
  1. [Các chức năng đã hoàn thành](#introduction)
- 2. [Ý nghĩa và chức năng của các hàm trong trang Đăng nhập](/PHP-training/README.md/.)
+ 2. [Ý nghĩa và chức năng của các hàm trong trang Đăng nhập](#dangnhap)
  3. [Ý nghĩa và chức năng của các hàm trong trang Đăng ký](/PHP-training/README.md/.)
  4. [Ý nghĩa và chức năng của các hàm trong trang Đăng xuất](/PHP-training/README.md/.)
  5. [Ý nghĩa và chức năng của các hàm trong trang upload](/PHP-training/README.md/.)
@@ -51,3 +51,4 @@
    <br>- `Về chức năng tìm kiếm:` Đầ tiên kiểm tra bằng câu lệnh `if (isset($_REQUEST['ok'])) ` nếu người dùng nhấn vào button `search` thì bắt đầu thực hiện tìm kiếm. Sau đó tạo một biến `$search` để kiểm tra `if (empty($search))` nếu như người dùng không nhập gì trên khung text sẽ thông báo là yêu cầu nhập dữ liệu vào ô trống. Ngược lại thì sẽ sử dụng câu lệnh `Like` để tìm kiếm. Sau khi có kết quả tìm kiếm sẽ tạo một `table` để hiện thị kết quả tìm kiếm. Để xem toàn bộ code nhấn vào đây [tìm kiếm](/search.php)</br>
 <br>1.6 chức năng [bình luận](/comment.php)</br>
    <br>- `Về chức năng bình luận:` Đầu tiên sẽ kết nối database. Tiếp theo sẽ khởi tạo một hàm `function time_elapsed_string($datetime, $full = false)` hàm này sẽ sẽ chuyển đổi ngày giờ thành chuỗi thời gian trôi qua, khởi tạo hàm `function show_comments($comments, $parent_id = -1)` hàm này sẽ điền các nhận xét và câu trả lời nhận xét bằng cách sử dụng một vòng lặp, khởi tạo hàm `function show_write_comment_form($parent_id = -1)` hàm này là mẫu cho biểu mẫu viết bình luận, `if (isset($_GET['page_id']))` để kiểm tra xem ID có tồn tại không. Dùng `SELECT COUNT(*) AS total_comments FROM comments` để lấy tổng số bình luận. Để xem toàn bộ code nhấn vào đây [bình luận](/comments.php)</br>
+#### 2. Ý nghĩa và chức năng của các hàm trong trang Đăng nhập <a name="dangnhap"></a>
