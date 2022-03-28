@@ -76,9 +76,31 @@
    -  `pathinfo` sẽ lấy thông tin về đường dẫn truyền vào.
    -  `in_array`dùng để kiểm tra giá trị nào đó có tồn tại trong mảng hay không. Nếu như tồn tại thì nó sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
    -  `move_uploaded_file` sẽ kiểm tra để đảm bảo rằng file truyền vào là một file upload hợp lệ. Nếu file hợp lệ nó sẽ được di chuyển đến thư mục đã truyền vào.
+#### 6. Ý nghĩa và chức năng của các hàm trong trang download file <a name="dw"></a>
    -  `$_GET` là phương thức gửi dữ liệu thông qua đường dẫn URL nằm trên thanh địa chỉ của Browser.
    -  `mysqli_fetch_assoc` sẽ tìm và trả về một dòng kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
    -  `file_exists` sẽ kiểm tra xem file hoặc thư mục có tồn tại hay không.
-#### 6. Ý nghĩa và chức năng của các hàm trong trang download file <a name="dw"></a>
+   - `mysqli_query` sẽ thực hiện truy vấn đối với cơ sở dữ liệu.
 #### 7. Ý nghĩa và chức năng của các hàm trong trang tìm kiếm <a name="timkiem"></a>
+   - `isset` được dùng để kiểm tra một biến nào đó đã được khởi tạo trong bộ nhớ hay chưa, nếu nó đã khởi tạo (tồn tại) thì sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
+   - `$_REQUEST` là thông tin gửi từ client lên server. 
+   - `addslashes` hàm này sẽ thêm dấu gách chéo trước những ký tự (‘, “, \) trong chuỗi tương ứng.
+   - `empty` dùng để kiểm tra một biến nào đó có giá trị rỗng hoặc chưa được khởi tạo hay không. 
+   - `$_GET` là phương thức gửi dữ liệu thông qua đường dẫn URL nằm trên thanh địa chỉ của Browser.
+   - `mysqli_connect` sẽ kết nối tới MySQL server.
+   - `mysqli_query` sẽ thực hiện truy vấn đối với cơ sở dữ liệu.
+   - `mysqli_num_rows` sẽ trả về số hàng trong tập hợp kết quả truyền vào. 
+   - `mysqli_fetch_assoc` sẽ tìm và trả về một dòng kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
 #### 8. Ý nghĩa và chức năng của các hàm trong trang bình luận <a name="binhluan"></a>
+   - `function time_elapsed_string` hàm này sẽ sẽ chuyển đổi ngày giờ thành chuỗi thời gian trôi qua.
+   - `function show_comments` hàm này sẽ điền các nhận xét và câu trả lời nhận xét bằng cách sử dụng một vòng lặp.
+   - `foreach ($comments as $comment)` lặp lại các nhận xét bằng vòng lặp foreach.
+   - `function show_write_comment_form` hàm này là mẫu cho biểu mẫu viết bình luận.
+   - `isset` được dùng để kiểm tra một biến nào đó đã được khởi tạo trong bộ nhớ hay chưa, nếu nó đã khởi tạo (tồn tại) thì sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
+   -  `$_GET` là phương thức gửi dữ liệu thông qua đường dẫn URL nằm trên thanh địa chỉ của Browser.
+   -  `$_POST` có tính bảo mật cao vì dữ liệu gửi phải thông qua một form HTML nên nó bị ẩn, nghĩa là chúng ta không thể thấy các giá trị đó được.
+   -  `prepare` Chúng ta chỉ thực hiện trong trường hợp sử dụng MySQLi Object-oriented.
+   -  `htmlspecialchars` hàm này chuyển các thể html trong chuỗi tương ứng sang  dạng thực thể của chúng.
+   -  'time_elapsed_string` đọc khoảng cách thời gian so với hiện tại.
+   -  `nl2br` sẽ thêm các thẻ xuống dòng ( <br />)  vào trước khi bắt đầu dòng mới trong chuỗi ( \r, \n, \n, \r, \n and \r).
+   -  `fetchAll` sẽ tìm và trả về tất cả các kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
