@@ -15,7 +15,7 @@
 
    1.1 Chức năng kết nối database
    
-   1.2 Chức năng [đăng nhập](/PHP-training/signin.php) [đăng kí](/PHP-training/register.php) [đăng xuất](/PHP-training/signout.php)
+   1.2 Chức năng [đăng nhập](/maihoangyen/PHP-training/signin.php) [đăng kí](/PHP-training/register.php) [đăng xuất](/PHP-training/signout.php)
 
    1.3 Chức năng [upload file](/PHP-training/upload.php)
    
