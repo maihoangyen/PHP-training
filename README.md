@@ -12,7 +12,7 @@
  8. [Ý nghĩa và chức năng của các hàm trong trang comments](/PHP-training/README.md/.)
 ### Nội dung báo cáo 
 #### 1. Các chức năng đã hoàn thành <a name="introduction"></a>
-   <br> 1.1 Chức năng [kết nối database](/ketnoi.php)</br>
+   ##### <br> 1.1 Chức năng [kết nối database](/ketnoi.php)</br>
        <br> - Trong chức năng kết nối database em sẽ tạo các biến `$servername`, `$username`, `$passwword`, `$database` và `$conn` để có thể kết nối được với database </br>  
        - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như `!$conn` có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công
        
@@ -29,7 +29,7 @@
           mysqli_close($conn);
           ?>`
    
-   1.2 Chức năng [đăng nhập](/signin.php), [đăng kí](/register.php), [đăng xuất](/signout.php)
+   ##### 1.2 Chức năng [đăng nhập](/signin.php), [đăng kí](/register.php), [đăng xuất](/signout.php)
        <br>- `Về chức năng đăng nhập:` Đầu tiên sẽ kết nối với database `SELECT` tới bảng `member`. Sau khi người dùng nhập username và password(được mã hóa md5 bằng câu lệnh `$password = md5($password)`thì bắt đầu kiểm tra bằng lệnh if nếu đăng nhập thành công sẽ liên kết đến trang chủ ngược lại sẽ thông báo là sai thông tin đăng nhập </br>
        <br>- `Về chức năng đăng kí:` Đầu tiên sẽ tạo biến `$conn` để kết nối database. Sau đó sẽ dùng `empty` kiểm tra nếu như người dùng chưa nhập thông tin thì bắt buộc phải điền đầy đủ thông tin. Tiếp theo là sẽ sử dụng câu lệnh `if (mysqli_num_rows($result) > 0)` để kiểm tra username và email có bị trùng hay không nếu không trùng thì sẽ sử dụng câu lệnh`INSERT INTO member` để chèn thông tin vào bảng member</br>
        <br>- `Về chức năng đăng xuất:` Kiểm tra bằng lệnh`if (isset($_SESSION['username']))` nó sẽ trả về `TRUE` nếu username tồn tại và ngược lại sẽ trả về `FALSE` và ở đây em sử dụng lệnh `unset` để hủy giá trị và isset sẽ trả về `FALSE` khi đăng xuất thành công nó sẽ trả về trang chủ  </br>
@@ -42,11 +42,11 @@
            }
         ?>`
 
-   1.3 Chức năng [upload file](/upload.php)
+   ##### 1.3 Chức năng [upload file](/upload.php)
    
-   1.4 Chức năng [download file](/download.php)
+   ##### 1.4 Chức năng [download file](/download.php)
    
-   1.5 Chức năng [tìm kiếm](/search.php)
+   ##### 1.5 Chức năng [tìm kiếm](/search.php)
    
-   1.6 chức năng [bình luận](/comment.php)
+   ##### 1.6 chức năng [bình luận](/comment.php)
  
