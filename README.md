@@ -13,11 +13,11 @@
 ### Nội dung báo cáo 
 #### 1. Các chức năng đã hoàn thành <a name="introduction"></a>
 
-   1.1 Chức năng [kết nối database](/ketnoi.php)
+   1.1 Chức năng [kết nối database](/ketnoi.php).
    
-     - Trong chức năng kết nối database em sẽ tạo các biến servername, username, passwword, database và conn để có thể kết nối được với database.
+     - Trong chức năng kết nối database em sẽ tạo các biến servername, username, passwword, database và conn để có thể kết nối được với database
        
-     - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như !$conn có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công.
+     - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như `!$conn` có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công
        
        `<?php
           $servername = "localhost";
