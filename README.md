@@ -2,7 +2,7 @@
  ## Họ và tên: Mai Thị Hoàng Yến
  ## Ngày báo cáo: Ngày 18/3/2022
  ### MỤC LỤC
- 1. [Các chức năng đã hoàn thành](#1.Các chức năng đã hoàn thành)
+ 1. [Các chức năng đã hoàn thành](/#1.Các chức năng đã hoàn thành)
  2. [Ý nghĩa và chức năng của các hàm trong trang Đăng nhập](/PHP-training/README.md/.)
  3. [Ý nghĩa và chức năng của các hàm trong trang Đăng ký](/PHP-training/README.md/.)
  4. [Ý nghĩa và chức năng của các hàm trong trang Đăng xuất](/PHP-training/README.md/.)
