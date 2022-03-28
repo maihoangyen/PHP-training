@@ -3,12 +3,19 @@
  ## Ngày báo cáo: Ngày 18/3/2022
  ### MỤC LỤC
  1. [Các chức năng đã hoàn thành](#gioithieu)
+ 
       1.1 [Chức năng kết nối database](#kn)
+      
       1.2 [Chức năng đăng nhập, đăng ký, đăng xuất](#dn)
+      
       1.3 [Chức năng upload](#upl)
+      
       1.4 [Chức năng download](#dow)
+      
       1.5 [Chức năng search](#se)
+      
       1.6 [Chức năng comments](#cmt)
+      
  2. [Ý nghĩa và chức năng của các hàm trong trang Đăng nhập](#dangnhap)
  3. [Ý nghĩa và chức năng của các hàm trong trang Đăng ký](#dangki)
  4. [Ý nghĩa và chức năng của các hàm trong trang Đăng xuất](#dangxuat)
