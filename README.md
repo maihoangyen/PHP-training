@@ -19,7 +19,7 @@
        
      - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như !$conn có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công.
        
-     - `<?php
+       `<?php
           $servername = "localhost";
           $username = "root";
           $password = "";
@@ -33,7 +33,9 @@
           ?>`
    
    1.2 Chức năng [đăng nhập](/signin.php) [đăng kí](/register.php) [đăng xuất](/signout.php)
-   
+       -
+       -
+       -
 
    1.3 Chức năng [upload file](/upload.php)
    
