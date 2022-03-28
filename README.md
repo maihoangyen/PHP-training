@@ -102,5 +102,5 @@
    -  `prepare` Chúng ta chỉ thực hiện trong trường hợp sử dụng MySQLi Object-oriented.
    -  `htmlspecialchars` hàm này chuyển các thể html trong chuỗi tương ứng sang  dạng thực thể của chúng.
    -  'time_elapsed_string` đọc khoảng cách thời gian so với hiện tại.
-   -  `nl2br` sẽ thêm các thẻ xuống dòng ( <br />)  vào trước khi bắt đầu dòng mới trong chuỗi ( \r, \n, \n, \r, \n and \r).
+   -  `nl2br` sẽ thêm các thẻ xuống dòng `(<br />)` vào trước khi bắt đầu dòng mới trong chuỗi ( \r, \n, \n, \r, \n and \r).
    -  `fetchAll` sẽ tìm và trả về tất cả các kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
