@@ -56,6 +56,14 @@
    - `fetch_assoc()` sẽ tìm và trả về một dòng kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
    - `$_SESSION` dùng để lưu trữ dữ liệu trên Server và đồng thời nó sẽ có một đoạn code dữ liệu được lưu trữ ở client (cookie).      
 #### 3. Ý nghĩa và chức năng của các hàm trong trang Đăng kí <a name="dangki"></a>
+   - `mysqli_connect` sẽ kết nối tới MySQL server.
+   - `isset` được dùng để kiểm tra một biến nào đó đã được khởi tạo trong bộ nhớ hay chưa, nếu nó đã khởi tạo (tồn tại) thì sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
+   - `$_POST` có tính bảo mật cao vì dữ liệu gửi phải thông qua một form HTML nên nó bị ẩn, nghĩa là chúng ta không thể thấy các giá trị đó được.
+   - `trim` sẽ loại bỏ khoẳng trắng dư thừa ở đầu và cuối chuỗi.
+   - `empty` dùng để kiểm tra một biến nào đó có giá trị rỗng hoặc chưa được khởi tạo hay không. 
+   - `array_push` dùng để thêm một phần tử mới vào cuối mảng.
+   -  `mysqli_query` sẽ thực hiện truy vấn đối với cơ sở dữ liệu.
+   -  `mysqli_num_rows` sẽ trả về số hàng trong tập hợp kết quả truyền vào. 
 #### 4. Ý nghĩa và chức năng của các hàm trong trang Đăng xuất <a name="dangxuat"></a>
 #### 5. Ý nghĩa và chức năng của các hàm trong trang upload file <a name="up"></a>
 #### 6. Ý nghĩa và chức năng của các hàm trong trang download file <a name="dw"></a>
