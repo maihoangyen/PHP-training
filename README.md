@@ -12,10 +12,16 @@
  8. [Ý nghĩa và chức năng của các hàm trong trang comments](/PHP-training/README.md/.)
 ### Nội dung báo cáo 
 1. Các chức năng đã hoàn thành
+
    1.1 Chức năng kết nối database
+   
    1.2 Chức năng [đăng nhập](/PHP-training/signin.php) [đăng kí](/PHP-training/register.php) [đăng xuất](/PHP-training/signout.php)
+
    1.3 Chức năng [upload file](/PHP-training/upload.php)
+   
    1.4 Chức năng [download file](/PHP-training/download.php)
+   
    1.5 Chức năng [tìm kiếm](/PHP-training/search.php)
+   
    1.6 chức năng [bình luận](/PHP-training/comment.php)
  
