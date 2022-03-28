@@ -14,14 +14,12 @@
 1. Các chức năng đã hoàn thành
 
    1.1 Chức năng kết nối database
-       ` <?php
+       `<?php
           $servername = "localhost";
           $username = "root";
           $password = "";
           $database = "demo";
-
           $conn = mysqli_connect($servername, $username, $password, $database);
-
           if (!$conn) {
             die("kết nối thất bại " . mysqli_connect_error());
           }
