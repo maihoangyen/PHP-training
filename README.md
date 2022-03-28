@@ -65,7 +65,20 @@
    -  `mysqli_query` sẽ thực hiện truy vấn đối với cơ sở dữ liệu.
    -  `mysqli_num_rows` sẽ trả về số hàng trong tập hợp kết quả truyền vào. 
 #### 4. Ý nghĩa và chức năng của các hàm trong trang Đăng xuất <a name="dangxuat"></a>
+   - `unset`  sẽ loại bỏ một hoặc nhiều biến được truyền vào hoặc cũng có thể được sử dụng để loại bỏ một phần tử xác định trong mảng.
+   - `isset` được dùng để kiểm tra một biến nào đó đã được khởi tạo trong bộ nhớ hay chưa, nếu nó đã khởi tạo (tồn tại) thì sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
 #### 5. Ý nghĩa và chức năng của các hàm trong trang upload file <a name="up"></a>
+   - `mysqli_fetch_all` sẽ tìm và trả về tất cả các kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
+   - `mysqli_query` sẽ thực hiện truy vấn đối với cơ sở dữ liệu.
+   - `isset` được dùng để kiểm tra một biến nào đó đã được khởi tạo trong bộ nhớ hay chưa, nếu nó đã khởi tạo (tồn tại) thì sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
+   - `mysqli_connect` sẽ kết nối tới MySQL server.
+   -  `$destination` là thư mục mà file sẽ được chuyển đến.
+   -  `pathinfo` sẽ lấy thông tin về đường dẫn truyền vào.
+   -  `in_array`dùng để kiểm tra giá trị nào đó có tồn tại trong mảng hay không. Nếu như tồn tại thì nó sẽ trả về TRUE và ngược lại sẽ trả về FALSE.
+   -  `move_uploaded_file` sẽ kiểm tra để đảm bảo rằng file truyền vào là một file upload hợp lệ. Nếu file hợp lệ nó sẽ được di chuyển đến thư mục đã truyền vào.
+   -  `$_GET` là phương thức gửi dữ liệu thông qua đường dẫn URL nằm trên thanh địa chỉ của Browser.
+   -  `mysqli_fetch_assoc` sẽ tìm và trả về một dòng kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
+   -  `file_exists` sẽ kiểm tra xem file hoặc thư mục có tồn tại hay không.
 #### 6. Ý nghĩa và chức năng của các hàm trong trang download file <a name="dw"></a>
 #### 7. Ý nghĩa và chức năng của các hàm trong trang tìm kiếm <a name="timkiem"></a>
 #### 8. Ý nghĩa và chức năng của các hàm trong trang bình luận <a name="binhluan"></a>
