@@ -15,22 +15,10 @@
 
    1.1 Chức năng [kết nối database](/ketnoi.php).
    
-     - Trong chức năng kết nối database em sẽ tạo các biến servername, username, passwword, database và conn để có thể kết nối được với database
+       - Trong chức năng kết nối database em sẽ tạo các biến servername, username, passwword, database và conn để có thể kết nối được với database
        
-     - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như `!$conn` có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công
-       
-       `<?php
-          $servername = "localhost";
-          $username = "root";
-          $password = "";
-          $database = "demo";
-          $conn = mysqli_connect($servername, $username, $password, $database);
-          if (!$conn) {
-            die("kết nối thất bại " . mysqli_connect_error());
-          }
-            echo "kết nối thành công";
-          mysqli_close($conn);
-          ?>`
+       - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như `!$conn` có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công
+      
    
    1.2 Chức năng [đăng nhập](/signin.php) [đăng kí](/register.php) [đăng xuất](/signout.php)
        -
