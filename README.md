@@ -2,16 +2,16 @@
  ## Họ và tên: Mai Thị Hoàng Yến
  ## Ngày báo cáo: Ngày 18/3/2022
  ### MỤC LỤC
- 1. [Các chức năng đã hoàn thành](#introduction)
+ 1. [Các chức năng đã hoàn thành](#gioithieu)
  2. [Ý nghĩa và chức năng của các hàm trong trang Đăng nhập](#dangnhap)
- 3. [Ý nghĩa và chức năng của các hàm trong trang Đăng ký](/PHP-training/README.md/.)
- 4. [Ý nghĩa và chức năng của các hàm trong trang Đăng xuất](/PHP-training/README.md/.)
- 5. [Ý nghĩa và chức năng của các hàm trong trang upload](/PHP-training/README.md/.)
- 6. [Ý nghĩa và chức năng của các hàm trong trang download](/PHP-training/README.md/.)
- 7. [Ý nghĩa và chức năng của các hàm trong trang search](/PHP-training/README.md/.)
- 8. [Ý nghĩa và chức năng của các hàm trong trang comments](/PHP-training/README.md/.)
+ 3. [Ý nghĩa và chức năng của các hàm trong trang Đăng ký](#dangki)
+ 4. [Ý nghĩa và chức năng của các hàm trong trang Đăng xuất](#dangxuat)
+ 5. [Ý nghĩa và chức năng của các hàm trong trang upload](#up)
+ 6. [Ý nghĩa và chức năng của các hàm trong trang download](#dw)
+ 7. [Ý nghĩa và chức năng của các hàm trong trang search](#timkiem)
+ 8. [Ý nghĩa và chức năng của các hàm trong trang comments](#binhluan)
 ### Nội dung báo cáo 
-#### 1. Các chức năng đã hoàn thành <a name="introduction"></a>
+#### 1. Các chức năng đã hoàn thành <a name="gioithieu"></a>
 <br> 1.1 Chức năng [kết nối database](/ketnoi.php)</br>
        <br> - Trong chức năng kết nối database em sẽ tạo các biến `$servername`, `$username`, `$passwword`, `$database` và `$conn` để có thể kết nối được với database </br>  
        - Tiếp theo e sẽ dùng lệnh if để kiểm tra kết nối nếu như `!$conn` có nghĩa là kết nối thất bại ngược lại thì sẽ thông báo là thành công
@@ -52,3 +52,12 @@
 <br>1.6 chức năng [bình luận](/comment.php)</br>
    <br>- `Về chức năng bình luận:` Đầu tiên sẽ kết nối database. Tiếp theo sẽ khởi tạo một hàm `function time_elapsed_string($datetime, $full = false)` hàm này sẽ sẽ chuyển đổi ngày giờ thành chuỗi thời gian trôi qua, khởi tạo hàm `function show_comments($comments, $parent_id = -1)` hàm này sẽ điền các nhận xét và câu trả lời nhận xét bằng cách sử dụng một vòng lặp, khởi tạo hàm `function show_write_comment_form($parent_id = -1)` hàm này là mẫu cho biểu mẫu viết bình luận, `if (isset($_GET['page_id']))` để kiểm tra xem ID có tồn tại không. Dùng `SELECT COUNT(*) AS total_comments FROM comments` để lấy tổng số bình luận. Để xem toàn bộ code nhấn vào đây [bình luận](/comments.php)</br>
 #### 2. Ý nghĩa và chức năng của các hàm trong trang Đăng nhập <a name="dangnhap"></a>
+      - `$result` là kết quả của truy vấn.
+      - `fetch_assoc()` sẽ tìm và trả về một dòng kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
+      - `$_SESSION` dùng để lưu trữ dữ liệu trên Server và đồng thời nó sẽ có một đoạn code dữ liệu được lưu trữ ở client (cookie).      
+#### 3. Ý nghĩa và chức năng của các hàm trong trang Đăng kí <a name="dangki"></a>
+#### 4. Ý nghĩa và chức năng của các hàm trong trang Đăng xuất <a name="dangxuat"></a>
+#### 5. Ý nghĩa và chức năng của các hàm trong trang upload file <a name="up"></a>
+#### 6. Ý nghĩa và chức năng của các hàm trong trang download file <a name="dw"></a>
+#### 7. Ý nghĩa và chức năng của các hàm trong trang tìm kiếm <a name="timkiem"></a>
+#### 8. Ý nghĩa và chức năng của các hàm trong trang bình luận <a name="binhluan"></a>
