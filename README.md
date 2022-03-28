@@ -29,7 +29,7 @@
           mysqli_close($conn);
           ?>`
    
-1.2 Chức năng [đăng nhập](/signin.php), [đăng kí](/register.php), [đăng xuất](/signout.php)
+<br>1.2 Chức năng [đăng nhập](/signin.php), [đăng kí](/register.php), [đăng xuất](/signout.php)</br>
        <br>- `Về chức năng đăng nhập:` Đầu tiên sẽ kết nối với database `SELECT` tới bảng `member`. Sau khi người dùng nhập username và password(được mã hóa md5 bằng câu lệnh `$password = md5($password)`thì bắt đầu kiểm tra bằng lệnh if nếu đăng nhập thành công sẽ liên kết đến trang chủ ngược lại sẽ thông báo là sai thông tin đăng nhập </br>
        <br>- `Về chức năng đăng kí:` Đầu tiên sẽ tạo biến `$conn` để kết nối database. Sau đó sẽ dùng `empty` kiểm tra nếu như người dùng chưa nhập thông tin thì bắt buộc phải điền đầy đủ thông tin. Tiếp theo là sẽ sử dụng câu lệnh `if (mysqli_num_rows($result) > 0)` để kiểm tra username và email có bị trùng hay không nếu không trùng thì sẽ sử dụng câu lệnh`INSERT INTO member` để chèn thông tin vào bảng member</br>
        <br>- `Về chức năng đăng xuất:` Kiểm tra bằng lệnh`if (isset($_SESSION['username']))` nó sẽ trả về `TRUE` nếu username tồn tại và ngược lại sẽ trả về `FALSE` và ở đây em sử dụng lệnh `unset` để hủy giá trị và isset sẽ trả về `FALSE` khi đăng xuất thành công nó sẽ trả về trang chủ  </br>
@@ -42,12 +42,12 @@
            }
         ?>`
 
-    1.3 Chức năng [upload file](/upload.php)
-    
+<br>1.3 Chức năng [upload file](/upload.php)</br>
+    <br>- `Về chức năng upload file:` Đầu tiên sẽ kết nối database. Sau khi kết nối thành công sẽ tạo các biến `$filename` để hiển thị tên file sau khi upload, biến `$destination` để lưu các file vào thư mục, biến ` $extension` để gọi biến này trong câu lệnh `if (!in_array($extension, ['pdf', 'txt', 'doc', 'docx', 'png', 'jpg', 'jpeg',  'gif']))` để cho phép tải những tệp đã mặc định trong dấu `[]`,biến $size để kiểm tra kích thước của file. Nếu thỏa điều kiện sẽ dùng`INSERT INTO file`để chèn file vào database và lưu vào thư mục `upload`.  </br>
    
-    1.4 Chức năng [download file](/download.php)
+<br>1.4 Chức năng [download file](/download.php)</br>
    
-    1.5 Chức năng [tìm kiếm](/search.php)
+<br>1.5 Chức năng [tìm kiếm](/search.php)</br>
    
-    1.6 chức năng [bình luận](/comment.php)
+<br>1.6 chức năng [bình luận](/comment.php)</br>
  
