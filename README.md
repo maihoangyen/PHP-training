@@ -114,6 +114,12 @@
    -  `$_POST` có tính bảo mật cao vì dữ liệu gửi phải thông qua một form HTML nên nó bị ẩn, nghĩa là chúng ta không thể thấy các giá trị đó được.
    -  `prepare` Chúng ta chỉ thực hiện trong trường hợp sử dụng MySQLi Object-oriented.
    -  `htmlspecialchars` hàm này chuyển các thể html trong chuỗi tương ứng sang  dạng thực thể của chúng.
+       Các ký tự được xác định trước là:
+                          ` & (ampersand) trở thành & amp;
+                           "(dấu ngoặc kép) trở thành & quot;
+                           '(trích dẫn duy nhất) trở thành & # 039;
+                           <(nhỏ hơn) trở thành & lt;
+                           > (lớn hơn) trở thành & gt;`  
    -  `time_elapsed_string` đọc khoảng cách thời gian so với hiện tại.
    -  `nl2br` sẽ thêm các thẻ xuống dòng `(<br />)` vào trước khi bắt đầu dòng mới trong chuỗi ( \r, \n, \n, \r, \n and \r).
    -  `fetchAll` sẽ tìm và trả về tất cả các kết quả của một truy vấn MySQL nào đó dưới dạng một mảng kết hợp.
