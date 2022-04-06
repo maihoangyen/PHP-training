@@ -129,4 +129,4 @@
  - `str_replace`: để xóa đi những ký tự không phải là chữ số.
  - `filter_input`: để xác thực các biến từ các nguồn không an toàn. Nó sẽ nhận một biến bên ngoài và tùy chọn lọc nó. 
  - `sprintf`:Trả về một chuỗi được định dạng. Trong hàm này nó sẽ có 2 tham số: 1 là chuỗi và nó chứa một đoạn Regex để thay thế. 2 là giá trị được thay thế tương ứng.
- - 'nl2br`:Chèn ngắt dòng HTML trước tất cả các dòng mới trong một chuỗi
+ - `nl2br`:Chèn ngắt dòng HTML trước tất cả các dòng mới trong một chuỗi
